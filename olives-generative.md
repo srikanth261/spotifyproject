@@ -1,5 +1,5 @@
 ---
-title: EDA
+title: Generative Model
 notebook: olives-eda.ipynb
 nav_include: 4
 ---

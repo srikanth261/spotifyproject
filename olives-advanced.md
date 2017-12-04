@@ -1,5 +1,5 @@
 ---
-title: EDA
+title: Advanced Models
 notebook: olives-eda.ipynb
 nav_include: 3
 ---
