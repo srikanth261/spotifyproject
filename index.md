@@ -24,11 +24,11 @@ you to know a user name to get playlists from that user name but a user name is 
 
 ![Features of the Data](./Table.png)
 
-|   |   |   |   |   |
+<!-- |   |   |   |   |   |
 |---|---|---|---|---|
 |   |   |   |   |   |
 |   |   |   |   |   |
-|   |   |   |   |   |
+|   |   |   |   |   | -->
 
 
 
