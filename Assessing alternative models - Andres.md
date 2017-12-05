@@ -1,3 +1,15 @@
+---
+title: Advanced Models
+notebook: Assessing alternative models - Andres.ipynb
+nav_include: 3
+---
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
+
 
 ### 1. Importing libraries
 
