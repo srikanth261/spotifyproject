@@ -22,7 +22,8 @@ function test() {
 
 
 function favgenre() {
-	document.getElementById('demo').innerHTML = Date()
+	var mylist = document.getElementById('genre');
+	document.getElementById('favorite').value = mylist.options[mylist.selectedIndex].text;
 }
 
 
