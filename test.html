@@ -15,15 +15,15 @@ Here we will explain how we can build the algorithm based on the generative mode
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script>
-$(document).ready(function(){
-    $("#btn1").click(function(){
-        $("p").append(" <b>Appended text</b>.");
-    });
+// $(document).ready(function(){
+//     $("#btn1").click(function(){
+//         $("p").append(" <b>Appended text</b>.");
+//     });
 
-    $("#btn2").click(function(){
-        $("ol").append("<li>Appended item</li>");
-    });
-});
+//     $("#btn2").click(function(){
+//         $("ol").append("<li>Appended item</li>");
+//     });
+// });
 </script>
 
 
@@ -48,6 +48,12 @@ function generate() {
 
 	var pop = ['3hmrgEKcLEQi0rlk3mJfZ7', '2ya9d4B06EQ8Fpj5SSqiTH', '6eoD4UZyqWIdSGapVI8uG0', '60ZMdbcC5wwmzbGr5XkDHd', '7IAGWiFEtS9MpDPS8EMJJN'];
 
+	var underground = ['7Hr2XoaGpIMKbNXCZDZ3le', '3F42FHouOY59SnSsyD2TAX', '22fRl49GSpRdu3J2EPj1i6', '3kBD2xHIqKWXjLAGidDTSz', '30yke04Lc0cEz1trJwoBZU'];
+
+	var latin = ['209gZgcfLq2aUuu51vOWBl', '5P45f6HakSHDwdFj5dO5K5', '7pk3EpFtmsOdj8iUhjmeCM', '0JcNysfWVWaMS7R6vzGB2k', '4z3GJkrtH97Bj6fRta983T'];
+
+	var hiphop = ['3DFjTEueCBYqg7YE05eUJP', '5ujh1I7NZH5agbwf7Hp8Hc', '41UYoaW5ErVF7bH4wuXwvo', '6lVJb47gQEh3PV585qgRoy', '21FjKQQHLuF5jMw5F83Gb9'];
+
 
 
 	//Reading the input of the user
@@ -60,7 +66,15 @@ function generate() {
 		var preference = dance;
 	} else if (input=="pop") {
 		var preference = pop;
+	} else if (input=="pop") {
+		var preference = pop;
+	} else if (input=="pop") {
+		var preference = pop;
+	} else if (input=="pop") {
+		var preference = pop;
 	}
+
+	$( ".play" ).empty();
 
 	for(var i=0;i<dance.length;i++) {
 
@@ -88,7 +102,7 @@ function generate() {
 	<option> latin </option>
 	<option> hip hop </option>
 </select>
-<p> You selected: <input type="text" id="favorite" size="20"> </p>
+<!-- <p> You selected: <input type="text" id="favorite" size="20"> </p> -->
 <button type="button" onclick=generate()>
 Generate Playlist!
 </button>
