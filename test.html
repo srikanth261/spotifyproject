@@ -51,7 +51,9 @@ function generate() {
 
 
 	//Reading the input of the user
-	var input = document.getElementById("favorite").text;
+	// var input = document.getElementById("favorite").text;
+	var mylist = document.getElementById('genre');
+	var input = mylist.options[mylist.selectedIndex].text;
 	console.log(input);
 
 	if (input=="dance") {
@@ -86,7 +88,7 @@ function generate() {
 	<option> latin </option>
 	<option> hip hop </option>
 </select>
-<p> You selected: <input type="text" id="favorite" size="20" </p>
+<p> You selected: <input type="text" id="favorite" size="20"> </p>
 <button type="button" onclick=generate()>
 Generate Playlist!
 </button>
