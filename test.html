@@ -20,145 +20,26 @@ function test() {
 	document.getElementById('demo').innerHTML = Date()
 }
 
+
+function favgenre() {
+	document.getElementById('demo').innerHTML = Date()
+}
+
+
+
 </script>
 
-
-
-
-
-<h2>Select your preferences and get a new Playlist!</h2>
-
-<button type="button" onclick=test()>
-Click me to display Date and Time
-</button>
-
-<p id="demo"></p>
-
-
-
-
-
-       <div class="section" id="demo">
-            <h2 class="sectiontitle">Interactive Playlist Demonstration</h2>
-
-            <!--center><p id='playbox' class='collabbox'>In this section, you can interact with the playlist generation model by selecting
-            an input song from the options on the left and the type of method utilized to optimize for playlist popularity.
-            After selecting these parameters, an output playlist will be displayed with the corresponding class probabilities
-            predicted by the model for popularity levels 1 through 5.</p></center>-->
-
-            <div class="col-md-6 column" style="height:600px">
-
-                <h3>1. Select Seed Song</h3>
-
-                <div class="select-song" style="height:40%;">
-
-                   <!-- <iframe src=\"https://open.spotify.com/embed?uri=spotify:track:7qiZfU4dY1lWllzX7mPBI3\"frameborder=\"0\" allowtransparency=\"true\"></iframe>
--->
-                    <table id="songselect">
-                        <tr>
-                            <th class="first">Song Name</th>
-                            <th class="second">Artist</th>
-                            <th class="third">Preview</th>
-                        </tr>
-
-                        <tr class="input-song selection" id="7qiZfU4dY1lWllzX7mPBI3">
-                            <td class="input-song first">Shape of You</td>
-                            <td class="input-song second">Ed Sheeran</td>
-                            <td class="input-song third">
-                            <iframe style="background: #FFFFFF" src="https://open.spotify.com/embed?uri=spotify:track:7qiZfU4dY1lWllzX7mPBI3&theme=black&view=list"
-                                    width="80" height="80" frameborder="0" allowtransparency="true"></iframe></td>
-                        </tr>
-                        <tr class="input-song selection" id="6txo4X8yd8FekwFFtI82Ea">
-
-                            <td class="input-song first">Piano Sonata No. 14 in C Minor</td>
-                            <td class="input-song second">Mozart</td>
-                            <td class="input-song third">
-                            <iframe src="https://open.spotify.com/embed?uri=spotify:track:6txo4X8yd8FekwFFtI82Ea&theme=white&view=coverart"
-                                    width="80" height="80" frameborder="0" allowtransparency="true"></iframe></td>
-                            <!--<td>6txo4X8yd8FekwFFtI82Ea</td>-->
-                        </tr>
-                        <tr class="input-song selection" id="7k2lqQ4Vt9435X24qUISki">
-                            <td class="input-song first">Daydream</td>
-                            <td class="input-song second">Ciele (ft. Chris Ho)</td>
-                            <td class="input-song third">
-                                <iframe src="https://open.spotify.com/embed?uri=spotify:track:7k2lqQ4Vt9435X24qUISki&theme=white&view=coverart"
-                                        width="80" height="80" frameborder="0" allowtransparency="true"></iframe></td>
-                            <!--<td>7k2lqQ4Vt9435X24qUISki</td>-->
-                        </tr>
-                    </table>
-
-                </div>
-
-                <h3 id="category-select">2. Select Category of Candidate Songs</h3>
-
-                <div class="select-type" style="height:50%;">
-
-                    <table id="methodselect">
-                        <tr>
-                            <th>Method</th>
-                        </tr>
-                        <tr id="Top tracks from related artists">
-                            <td>Top Tracks From Related Artists</td>
-                        </tr>
-                        <tr id="Similar tracks from related artists">
-                            <td>Similar Tracks From Related Artists</td>
-                        </tr>
-                        <tr id="Similar tracks from vantage point database">
-                            <td>Similar Tracks From Vantage Points Database</td>
-                        </tr>
-                    </table>
-
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6" style="height: 600px">
-
-                <h3>3. View Playlist & Class Probabilities</h3>
-
-                <div class="playlist-gen" style="height:50%;">
-
-                    <table>
-
-                        <thead>
-
-                        <tr>
-                            <th class="playlist-col">Recommended Playlist</th>
-                            <th class="popularity-col">Popularity</th>
-                        </tr>
-                        </thead>
-                        <tbody class="play">
-
-
-                        </tbody>
-                    </table>
-
-                </div>
-                <div id="chart-area" style="margin-top: 30px;"></div>
-            </div>
-        </div>
-
-
-
-<script src="javascripts/playlist.js"></script>	
-<script src="javascripts/graph.js"></script>
-<script src="javascripts/queue.v1.min.js"></script>
-<script src="javascripts/bootstrap.min.js"></script>
-<script src="javascripts/main.js"></script>
-<script src="javascripts/jquery.fullPage.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
+<form>
+	Select your favorite genre:
+<select id='genre' onchange="favgenre()">
+	<option> pop </option>
+	<option> dance </option>
+	<option> underground </option>
+	<option> latin </option>
+	<option> hip hop </option>
+</select>
+<p> You selected: <input type="text" id="favorite" size="20" </p>
+</form>
 
 
 
