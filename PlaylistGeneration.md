@@ -1,6 +1,6 @@
 ---
-title: EDA
-notebook: EDA.ipynb
+title: Playlists Generation
+notebook: PlaylistGeneration.ipynb
 nav_include: 4
 ---
 
