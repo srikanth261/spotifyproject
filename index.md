@@ -2,7 +2,6 @@
 title: Spotify Project
 ---
 
-This is the home page
 
 ## Motivation
 
