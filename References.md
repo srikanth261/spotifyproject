@@ -1,6 +1,6 @@
 ---
 title: References
-nav_include: 8
+nav_include: 7
 ---
 
 - Reference 1: "jkjkj sdf"
