@@ -51,7 +51,7 @@ function generate() {
 
 
 	//Reading the input of the user
-	var input = document.getElementById("favorite").innerHTML;
+	var input = document.getElementById("favorite").text;
 	console.log(input);
 
 	if (input=="dance") {
@@ -62,7 +62,7 @@ function generate() {
 
 	for(var i=0;i<dance.length;i++) {
 
-		var outputFrame = '<tr><td class="song playlist-col input-song"><iframe src="https://open.spotify.com/embed?uri=spotify:track:' + preference[i] + '&theme=black&view=list" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe></td><td class="popularity-col">' + '???' + '</td></tr>';
+		var outputFrame = '<tr><td class="song playlist-col input-song"><iframe src="https://open.spotify.com/embed?uri=spotify:track:' + preference[i] + '&theme=black&view=list" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe></td><td class="popularity-col">' + 100 + '</td></tr>';
 
 		$( ".play" ).append(outputFrame);
 	}
