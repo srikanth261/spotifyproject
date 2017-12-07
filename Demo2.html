@@ -52,16 +52,22 @@ function favgenre() {
 function generate() {
 
 	var pop = ['7EmGUiUaOSGDnUUQUDrOXC', '5AEtlRudpgdT5FtNiuly6Y', '7EI6Iki24tBHAMxtb4xQN2', '6eUncuJutsFi9BGO1JaBHh', '79NlESqzFSW0hdBWgls4FX'];
+	var pop_popularity = [100, 95.7, 93.6, 90.4, 86.2];
 
 	var rock = ['3MrRksHupTVEQ7YbA0FsZK', '7FX3ZWE70VRjsprg5oeECc', '3reay7NBijCy7n8xVLpDL8', '5NtoPBmhY7WGdpsHmpy9Xh', '3XFQtdzF61TVAFlHyWbnIN'];
+	var rock_popularity = [74.5, 71.3, 68.1, 67.0, 70.2];
 
 	var jazz = ['3PJMsxg6rz9FOo6xNiASXz', '72PqmnVj86bfTnkFiQ9Mx9', '3gMMHNUrq3rPeUfgQcAJ2H', '7pKWTcPfT9mg2iAhobFHpS', '3B0dCvMdcjW4B7RX3E6DDA'];
+	var jazz_popularity = [69.1, 63.8, 61.7, 62.8, 64.9];
 
 	var house = ['1HrMWH5GUdK6Yi94rbANJA', '1zsDbmrf4ZkjW5hsSsaDjO', '5MNY5OY14mt0A48dQ7J9CI', '6zutgObWlxx1A95cjAYGwB', '2LAmMdTuNzuwJGyPgCosdt'];
+	var house_popularity = [85.1, 66.0, 64.9, 63.8, 62.8];
 
 	var hiphop = ['05hdZ0YRqAg6qsgV1ee3LE', '6qUEOWqOzu1rLPUPQ1ECpx', '3ieh7TBN3gAZCAaOYsoOZt', '6KIKRz9eSTXdNsGUnomdtW', '0pxVWo0sFtffiizPFEQabe'];
+	var hiphop_popularity = [74.5,71.3,73.4,69.1,70.2];
 
 	var opera = ['0BqbWiOxccb0qQshm3Whjt', '3Vb0EDj3nLxxK3IOcp27j3', '4WYZuhsa8idA4kPDPsNY6B', '3iVh3cgWwbYNFGZz5W8g12', '1tf5l5Cur6hdwoStk1f1WY'];
+	var opera_popularity = [50.0, 40.4, 46.8, 36.2, 35.1];
 
 
 
@@ -73,16 +79,22 @@ function generate() {
 
 	if (input=="Pop") {
 		var preference = pop;
+		var popularity = pop_popularity;
 	} else if (input=="Rock") {
 		var preference = rock;
+		var popularity = rock_popularity;
 	} else if (input=="Jazz") {
 		var preference = jazz;
+		var popularity = jazz_popularity;
 	} else if (input=="House") {
 		var preference = house;
+		var popularity = house_popularity;
 	} else if (input=="Hip Hop") {
 		var preference = hiphop;
+		var popularity = hiphop_popularity;
 	} else if (input=="Opera") {
 		var preference = opera;
+		var popularity = opera_popularity;
 	}
 
 
@@ -90,7 +102,7 @@ function generate() {
 
 	for(var i=0;i<preference.length;i++) {
 
-		var outputFrame = '<tr><td class="song playlist-col input-song"><iframe src="https://open.spotify.com/embed?uri=spotify:track:' + preference[i] + '&theme=black&view=list" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe></td><td class="popularity-col">' + 100 + '</td></tr>';
+		var outputFrame = '<tr><td class="song playlist-col input-song"><iframe src="https://open.spotify.com/embed?uri=spotify:track:' + preference[i] + '&theme=black&view=list" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe></td><td class="popularity-col">' + popularity[i] + '</td></tr>';
 
 		$( ".play" ).append(outputFrame);
 	}
