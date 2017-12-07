@@ -1,6 +1,6 @@
 ---
-title: Get new Playlist
-nav_include: 5
+title: Get new Playlist (V2)
+nav_include: 6
 ---
 
 <!-- ## Here is the Demo for the Playlist Generation
@@ -51,15 +51,17 @@ function favgenre() {
 
 function generate() {
 
-	var dance = ['1ARJhjuI6TNYZCxYygFQ4F', '33LLMc7LEuf4tc8h0NzhvC', '4JtVOeyOJyPLg72MbGoNn8', '0iYebKFUSfF72fUu2OW6ZT', '7gKIt3rDGIMJDFVSPBnGmj'];
+	var pop = ['7EmGUiUaOSGDnUUQUDrOXC', '5AEtlRudpgdT5FtNiuly6Y', '7EI6Iki24tBHAMxtb4xQN2', '6eUncuJutsFi9BGO1JaBHh', '79NlESqzFSW0hdBWgls4FX'];
 
-	var pop = ['3hmrgEKcLEQi0rlk3mJfZ7', '2ya9d4B06EQ8Fpj5SSqiTH', '6eoD4UZyqWIdSGapVI8uG0', '60ZMdbcC5wwmzbGr5XkDHd', '7IAGWiFEtS9MpDPS8EMJJN'];
+	var rock = ['3MrRksHupTVEQ7YbA0FsZK', '7FX3ZWE70VRjsprg5oeECc', '3reay7NBijCy7n8xVLpDL8', '5NtoPBmhY7WGdpsHmpy9Xh', '3XFQtdzF61TVAFlHyWbnIN'];
 
-	var underground = ['7Hr2XoaGpIMKbNXCZDZ3le', '3F42FHouOY59SnSsyD2TAX', '22fRl49GSpRdu3J2EPj1i6', '3kBD2xHIqKWXjLAGidDTSz', '30yke04Lc0cEz1trJwoBZU'];
+	var jazz = ['3PJMsxg6rz9FOo6xNiASXz', '72PqmnVj86bfTnkFiQ9Mx9', '3gMMHNUrq3rPeUfgQcAJ2H', '7pKWTcPfT9mg2iAhobFHpS', '3B0dCvMdcjW4B7RX3E6DDA'];
 
-	var latin = ['209gZgcfLq2aUuu51vOWBl', '5P45f6HakSHDwdFj5dO5K5', '7pk3EpFtmsOdj8iUhjmeCM', '0JcNysfWVWaMS7R6vzGB2k', '4z3GJkrtH97Bj6fRta983T'];
+	var house = ['1HrMWH5GUdK6Yi94rbANJA', '1zsDbmrf4ZkjW5hsSsaDjO', '5MNY5OY14mt0A48dQ7J9CI', '6zutgObWlxx1A95cjAYGwB', '2LAmMdTuNzuwJGyPgCosdt'];
 
-	var hiphop = ['3DFjTEueCBYqg7YE05eUJP', '5ujh1I7NZH5agbwf7Hp8Hc', '41UYoaW5ErVF7bH4wuXwvo', '6lVJb47gQEh3PV585qgRoy', '21FjKQQHLuF5jMw5F83Gb9'];
+	var hiphop = ['05hdZ0YRqAg6qsgV1ee3LE', '6qUEOWqOzu1rLPUPQ1ECpx', '3ieh7TBN3gAZCAaOYsoOZt', '6KIKRz9eSTXdNsGUnomdtW', '0pxVWo0sFtffiizPFEQabe'];
+
+	var opera = ['0BqbWiOxccb0qQshm3Whjt', '3Vb0EDj3nLxxK3IOcp27j3', '4WYZuhsa8idA4kPDPsNY6B', '3iVh3cgWwbYNFGZz5W8g12', '1tf5l5Cur6hdwoStk1f1WY'];
 
 
 
@@ -69,17 +71,20 @@ function generate() {
 	var input = mylist.options[mylist.selectedIndex].text;
 	console.log(input);
 
-	if (input=="dance") {
-		var preference = dance;
-	} else if (input=="pop") {
+	if (input=="Pop") {
 		var preference = pop;
-	} else if (input=="underground") {
-		var preference = underground;
-	} else if (input=="latin") {
-		var preference = latin;
-	} else if (input=="hip hop") {
+	} else if (input=="Rock") {
+		var preference = rock;
+	} else if (input=="Jazz") {
+		var preference = jazz;
+	} else if (input=="House") {
+		var preference = house;
+	} else if (input=="Hip Hop") {
 		var preference = hiphop;
+	} else if (input=="Opera") {
+		var preference = opera;
 	}
+
 
 	$( ".play" ).empty();
 
@@ -103,11 +108,12 @@ function generate() {
 <form>
 	Select your favorite genre:
 <select id='genre' onchange="favgenre()">
-	<option> pop </option>
-	<option> dance </option>
-	<option> underground </option>
-	<option> latin </option>
-	<option> hip hop </option>
+	<option> Pop </option>
+	<option> Rock </option>
+	<option> Hip Hop </option>
+	<option> House </option>
+	<option> Jazz </option>
+	<option> Opera </option>
 </select>
 <!-- <p> You selected: <input type="text" id="favorite" size="20"> </p> -->
 <button type="button" onclick=generate()>
