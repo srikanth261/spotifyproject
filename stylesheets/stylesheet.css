@@ -758,9 +758,9 @@ svg {
 
 .play {
     display:block;
-    height:500px;
+    height:1000px;
     overflow:auto;
-    border: 1px dashed #373737;
+    /*border: 1px dashed #373737;*/
 
 }
 
