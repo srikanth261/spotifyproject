@@ -30,6 +30,15 @@ Here we will explain how we can build the algorithm based on the generative mode
 </head>
 <body>
 
+	<style>
+	
+	th, td {
+    padding: 15px;
+    text-align: left;
+	}
+
+	</style>
+
 	<a href="https://andreslindner.github.io/spotifyproject/PlaylistGeneration.html"> 
 		Back to Generative model 
 	</a>
@@ -108,7 +117,7 @@ function generate() {
 </select>
 <!-- <p> You selected: <input type="text" id="favorite" size="20"> </p> -->
 <button type="button" onclick=generate()>
-Generate Playlist!
+Generate Playlist
 </button>
 </form>
 
@@ -117,7 +126,7 @@ Generate Playlist!
 </div>
 
 
-<table>
+<table id="results">
 
     <thead>
 
