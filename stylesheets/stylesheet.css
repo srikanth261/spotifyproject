@@ -758,7 +758,7 @@ svg {
 
 .play {
     display:block;
-    height:600px;
+    height:500px;
     overflow:auto;
     border: 1px dashed #373737;
 
@@ -777,8 +777,8 @@ tr {
 
 thead, tbody tr {
     display:table;
-    width:100%;
-    table-layout:fixed;/* even columns width , fix width of table too*/
+    width:50%;
+    table-layout:fixed;
 }
 
 .bar { fill:  #5A955A; }
